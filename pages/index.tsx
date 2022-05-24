@@ -1,6 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+
+import { PageConfig } from 'next';
+
+export const config: PageConfig = {
+  unstable_runtimeJS: false,
+  unstable_JsPreload: false
+};
 
 export default function Home() {
   return (
